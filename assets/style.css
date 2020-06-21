@@ -1,0 +1,65 @@
+@import 'normalize';
+
+body{
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 14px;
+	text-align: center;
+	color: #868e96;
+}
+
+html, body {
+	height: 100%;
+}
+
+.marvel-device, .marvel-device div, *:before, *:after {
+	transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+a {
+	cursor: pointer;
+	color: #329af0;
+	transition: color 300ms ease-in-out;
+}
+
+
+
+section {
+	background: #1e1e1e;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	width: 100%;
+	height: 100%;
+	display: table;
+	position: relative;
+}
+
+section.gold {
+	background: white;
+	border-bottom: 1px solid #f1f3f5;
+}
+
+section .wrap {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.marvel-device{
+	vertical-align: top;
+}
+
+.marvel-device .screen{
+	text-align: left;
+}
+
+
+.iphone8 .screen {
+	background: rgb(226,228,228);
+	background: linear-gradient(to bottom, rgba(226,228,228,1) 0%,rgba(125,130,129,1) 100%);
+}
+
+.iphone8.gold .screen {
+	background: rgb(241,226,208);
+	background: linear-gradient(to bottom, rgba(241,226,208,1) 0%,rgba(235,218,199,1) 100%);
+}
